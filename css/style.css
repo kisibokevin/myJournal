@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.app{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.loginPage, .dashboard{
+    display: flex;
+    min-height: 100vh;
+}
+
+.loginPage{
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.loginImage, .loginForm{
+    width: 600px;
+}
+
+.loginImage img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 100px;
+}
+
+.loginForm h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loginForm form input{
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginForm form button{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.loginForm form button:hover{
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.loginForm form button:active{
+    transform: scale(0.98);
+}
+
+.loginForm h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.socialLogins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialLogins button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E5E4E2;
+    color: #2A3439;
+    cursor: pointer;
+}
+
+.socialLogins button:hover{
+    border: 2px solid #2A3439;
+}
+
+.loginForm h4{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginForm h4 a{
+    text-decoration: none;
+}
+
+
+/** DASHBOARD **/
+.dashboard{
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 3px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1.5;
+    background-color: #F5F5F5;
+    padding: 3px 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menuIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuIcon h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menuIcon span{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.searchBar{
+    position: relative;
+}
+.searchBar input{
+    width: 100%;
+    font-size: 18px;
+    padding: 3px 40px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchBar input:focus{
+    border: 2px solid #8C92AC;
+}
+
+.searchBar span{
+    position: absolute;
+    color: #8C92AC;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tasks p,
+.lists p,
+.tags p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tasks ul, .lists ul, .tags ul{
+    list-style: none;
+    padding-left: 10px;
+    color: #2A3439;
+}
+
+.tasks{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tasks ul li, .lists ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.tasks ul li:hover, .lists ul li:hover, .settings ul li:hover{
+    background-color: #E5E4E2;
+}
+
+.tasks ul li span, .lists ul li span{
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.personalSpan, .workSpan, .listBgSpan{
+    width: 20px;
+    height: 20px;
+}
+
+.personalSpan{
+    background-color: #007bff;
+}
+
+.workSpan{
+    background-color: #28a745;
+}
+
+.listBgSpan{
+    background-color: #ffc107;
+}
+
+
+.tags ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags ul li{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tech{
+    background-color: #FF00FF;
+}
+
+.soft{
+    background-color: #6CB4EE;
+}
+
+.tag{
+    background-color: #F0F8FF;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.settings ul{
+    list-style: none;
+}
+
+.settings ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main{
+    flex: 4.5;
+}
